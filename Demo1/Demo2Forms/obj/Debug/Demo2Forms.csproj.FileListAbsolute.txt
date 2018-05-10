@@ -1,0 +1,10 @@
+C:\Users\moises\source\repos\Demo1\Demo2Forms\bin\Debug\Demo2Forms.exe.config
+C:\Users\moises\source\repos\Demo1\Demo2Forms\bin\Debug\Demo2Forms.exe
+C:\Users\moises\source\repos\Demo1\Demo2Forms\bin\Debug\Demo2Forms.pdb
+C:\Users\moises\source\repos\Demo1\Demo2Forms\obj\Debug\Demo2Forms.csprojResolveAssemblyReference.cache
+C:\Users\moises\source\repos\Demo1\Demo2Forms\obj\Debug\Demo2Forms.Form1.resources
+C:\Users\moises\source\repos\Demo1\Demo2Forms\obj\Debug\Demo2Forms.Properties.Resources.resources
+C:\Users\moises\source\repos\Demo1\Demo2Forms\obj\Debug\Demo2Forms.csproj.GenerateResource.cache
+C:\Users\moises\source\repos\Demo1\Demo2Forms\obj\Debug\Demo2Forms.csproj.CoreCompileInputs.cache
+C:\Users\moises\source\repos\Demo1\Demo2Forms\obj\Debug\Demo2Forms.exe
+C:\Users\moises\source\repos\Demo1\Demo2Forms\obj\Debug\Demo2Forms.pdb

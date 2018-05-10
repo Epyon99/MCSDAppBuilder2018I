@@ -1,0 +1,7 @@
+C:\Users\moises\source\repos\Demo1\Calculadora\bin\Debug\Calculadora.exe.config
+C:\Users\moises\source\repos\Demo1\Calculadora\bin\Debug\Calculadora.exe
+C:\Users\moises\source\repos\Demo1\Calculadora\bin\Debug\Calculadora.pdb
+C:\Users\moises\source\repos\Demo1\Calculadora\obj\Debug\Calculadora.csprojResolveAssemblyReference.cache
+C:\Users\moises\source\repos\Demo1\Calculadora\obj\Debug\Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\moises\source\repos\Demo1\Calculadora\obj\Debug\Calculadora.exe
+C:\Users\moises\source\repos\Demo1\Calculadora\obj\Debug\Calculadora.pdb

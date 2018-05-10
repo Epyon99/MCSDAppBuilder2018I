@@ -1,0 +1,15 @@
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\bin\Debug\Demo3Wpf.exe.config
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\bin\Debug\Demo3Wpf.exe
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\bin\Debug\Demo3Wpf.pdb
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\Demo3Wpf.csprojResolveAssemblyReference.cache
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\MainWindow.g.cs
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\App.g.cs
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\Demo3Wpf_MarkupCompile.cache
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\Demo3Wpf_MarkupCompile.lref
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\MainWindow.baml
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\Demo3Wpf.g.resources
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\Demo3Wpf.Properties.Resources.resources
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\Demo3Wpf.csproj.GenerateResource.cache
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\Demo3Wpf.csproj.CoreCompileInputs.cache
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\Demo3Wpf.exe
+C:\Users\moises\source\repos\Demo1\Demo3Wpf\obj\Debug\Demo3Wpf.pdb
