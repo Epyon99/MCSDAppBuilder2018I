@@ -48,7 +48,7 @@ namespace Demo_Classes
                     }
 
                     copiaNueva[0].Nombre = "Reno de la nariz roja";
-                    MostrarRenos(trineo, listaNueva, copiaNueva);
+                    trineo.MostrarRenos(trineo, listaNueva, copiaNueva);
 
 
                     var listaRegalos = trineo.Regalos;
