@@ -6,10 +6,38 @@ using System.Threading.Tasks;
 
 namespace BaseClasses
 {
+    public static class Extension
+    {
+        public static string AgregarSaludo(this object s)
+        {
+            return s + "Hola Mundo";
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
+            // Ejemplos de Excepciones
+            try
+            {
+                try
+                {
+                    var y = 0;
+                    double x = 0 / y;
+                }
+                catch (Exception ex)
+                {
+                    throw new ExceptionLourtec("Error custom", ex);
+                }
+            }
+            catch (ExceptionLourtec m)
+            {
+                Console.WriteLine(m.Message.AgregarSaludo());
+            }
+
+            string s = "Hola Mundo Doble";
+            Console.WriteLine(s.AgregarSaludo());
+
             Book book = new Book();
             LibraryItem libraryItem = new Book();
             ComputerProgram computerProgram = new ComputerProgram();
@@ -18,9 +46,18 @@ namespace BaseClasses
             film.Adquirir(1000);
             film.Catalogo();
             Console.ReadKey();
-            
+
         }
     }
+
+    public class ExceptionLourtec : Exception
+    {
+        public ExceptionLourtec(string message, Exception inner) : base(message, inner)
+        {
+
+        }
+    }
+
     // libros, revistas, periodos, vidos, programs, grabaciones
     public abstract class LibraryItem
     {
@@ -54,7 +91,7 @@ namespace BaseClasses
         {
             Console.WriteLine($"Tipo:{Tipo} - Autor:{ Autor} - NumeroRegistro:{NumeroRegistro}");
         }
-        
+
 
         public void Solicitar()
         {
@@ -112,18 +149,18 @@ namespace BaseClasses
     {
         public Film(string autor) : base(autor)
         {
-            
+
         }
         public string Director { get; set; }
         public DateTime ReleaseDate { get; set; }
         public List<string> Actores { get; set; }
 
-        public Dictionary<string,string> Creditos { get; set; }
+        public Dictionary<string, string> Creditos { get; set; }
     }
 
-    public class ComputerProgram: RecordedItem
+    public class ComputerProgram : RecordedItem
     {
-        public ComputerProgram():base("Library")
+        public ComputerProgram() : base("Library")
         {
 
         }
