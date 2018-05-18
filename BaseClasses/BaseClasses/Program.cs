@@ -13,10 +13,20 @@ namespace BaseClasses
             return s + "Hola Mundo";
         }
     }
+
+    public class HolaMundo<T>
+    {
+        public string TypeCasting(T obj)
+        {
+            return "";
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
+            List<int> y = new List<int>();
+
             // Ejemplos de Excepciones
             try
             {
