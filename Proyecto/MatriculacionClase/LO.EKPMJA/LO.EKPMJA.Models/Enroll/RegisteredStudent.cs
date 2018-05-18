@@ -19,5 +19,7 @@ namespace LO.EKPMJA.Models.Enroll
         public Guid WorkCycleId { get; set; }
 
         public WorkCycle WorkCycle { get; set; }
+
+        public bool IsCycleActive { get; set; }
     }
 }

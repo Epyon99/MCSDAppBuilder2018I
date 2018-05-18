@@ -19,5 +19,9 @@ namespace LO.EKPMJA.Models.Enroll
         public List<Qualification> Qualification { get; set; }
 
         public List<Assistance> Assistances { get; set; }
+
+        public bool IsActive { get; set; }
+
+        public bool IsRepetition { get; set; }
     }
 }

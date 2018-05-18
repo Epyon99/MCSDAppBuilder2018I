@@ -40,8 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Feature.cs" />
+    <Compile Include="Common\Person.cs" />
     <Compile Include="Enroll\Assistance.cs" />
     <Compile Include="Enroll\AvailableCourse.cs" />
+    <Compile Include="Enroll\CapableTeacherCourse.cs" />
     <Compile Include="Enroll\Career.cs" />
     <Compile Include="Enroll\Course.cs" />
     <Compile Include="Enroll\Cycle.cs" />
@@ -51,11 +54,13 @@
     <Compile Include="Enroll\RegisteredStudent.cs" />
     <Compile Include="Enroll\Schedule.cs" />
     <Compile Include="Enroll\ScheduleDay.cs" />
+    <Compile Include="Enroll\Student.cs" />
+    <Compile Include="Enroll\Teacher.cs" />
+    <Compile Include="Enroll\TeacherCourse.cs" />
     <Compile Include="Enroll\WorkCycle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Common\" />
     <Folder Include="ManageDocs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
