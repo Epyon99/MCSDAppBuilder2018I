@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LO.EKPMJA", "LO.EKPMJA\LO.EKPMJA.csproj", "{745A6E7B-CE3A-4CCE-BF0E-2DF10EEDB693}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LO.EKPMJA.Models", "LO.EKPMJA.Models\LO.EKPMJA.Models.csproj", "{8705C0E8-A8C8-47DF-97DB-B841BF20F14D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{745A6E7B-CE3A-4CCE-BF0E-2DF10EEDB693}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{745A6E7B-CE3A-4CCE-BF0E-2DF10EEDB693}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{745A6E7B-CE3A-4CCE-BF0E-2DF10EEDB693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8705C0E8-A8C8-47DF-97DB-B841BF20F14D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8705C0E8-A8C8-47DF-97DB-B841BF20F14D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8705C0E8-A8C8-47DF-97DB-B841BF20F14D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8705C0E8-A8C8-47DF-97DB-B841BF20F14D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
