@@ -1,4 +1,6 @@
-﻿using Newtonsoft.Json;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -87,7 +89,36 @@ namespace DemoFileIO
                 SerializacionJson(phantonPath, fantasmas);
             }
 
-            Console.ReadKey();
+            // PDF ITextSharp
+            string pdfPath = @"C:\Workspace\Personal\Lourtec-2018-i\MCSDAppBuilder2018I\Clase-5\phdThesis.pdf";
+            string pdfPathClone = @"C:\Workspace\Personal\Lourtec-2018-i\MCSDAppBuilder2018I\Clase-5\Clone.pdf";
+
+
+            iTextSharp.text.Document document = null;
+            try
+            {
+                document = new iTextSharp.text.Document();
+                PdfWriter write = PdfWriter.GetInstance(document, new FileStream(pdfPathClone, FileMode.Create));
+                Anchor anchor = new Anchor("Hola Mundo");
+                iTextSharp.text.Paragraph paragraph = new iTextSharp.text.Paragraph();
+                paragraph.Add(anchor);
+                document.Open();
+                document.OpenDocument();
+
+                document.Add(new Chunk("Hola Mundo Chunk"));
+                document.Add(paragraph);
+                if (document.IsOpen())
+                {
+                    document.NewPage();
+                }
+                document.Close();
+                write.Close();
+            }
+            catch (Exception ex)
+            {
+
+            }
+
         }
 
         public static void SerializacionBinaria(string phantonPath, List<Fantasma> fantasmas)
@@ -183,7 +214,7 @@ namespace DemoFileIO
                 }
             }
 
-            using (var file = File.OpenWrite(phantonJson))
+            using (FileStream file = File.OpenWrite(phantonJson))
             {
                 var fantasma = new Fantasma()
                 {
