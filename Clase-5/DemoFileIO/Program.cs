@@ -1,5 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
 
 namespace DemoFileIO
 {
@@ -34,7 +39,7 @@ namespace DemoFileIO
                 Directory.CreateDirectory(randomDirectoryName);
 
                 Console.WriteLine(Directory.GetParent(randomDirectoryName));
-                Directory.SetCreationTime(randomDirectoryName,new DateTime(1999,12,15));
+                Directory.SetCreationTime(randomDirectoryName, new DateTime(1999, 12, 15));
                 Console.WriteLine(Directory.GetCreationTime(randomDirectoryName));
             }
 
@@ -59,7 +64,142 @@ namespace DemoFileIO
             FileInfo f = new FileInfo(randomName);
             Console.WriteLine($"{f.FullName} {f.CreationTime} {f.Attributes}");
 
+
+            // Creacion de Fantasmas
+            List<Fantasma> fantasmas = new List<Fantasma>();
+            var phantonPath = $"{Path.GetDirectoryName(path)}\\Fantasmas";
+            if (!Directory.Exists(phantonPath))
+            {
+                Directory.CreateDirectory(phantonPath);
+            }
+
+            if (Directory.Exists(phantonPath))
+            {
+
+                Console.WriteLine("----Binary---");
+                SerializacionBinaria(phantonPath, fantasmas);
+
+                Console.WriteLine("----XML---");
+                SerializacionXml(phantonPath, fantasmas);
+
+
+                Console.WriteLine("----JSON---");
+                SerializacionJson(phantonPath, fantasmas);
+            }
+
             Console.ReadKey();
+        }
+
+        public static void SerializacionBinaria(string phantonPath, List<Fantasma> fantasmas)
+        {
+            // Serializacion Binaria
+            var phantonBinary = $"{phantonPath}\\phanton.file";
+            // Deserializar
+            if (File.Exists(phantonBinary))
+            {
+                IFormatter formatter = new BinaryFormatter();
+                using (var buffer = File.OpenRead(phantonBinary))
+                {
+                    fantasmas = formatter.Deserialize(buffer) as List<Fantasma>;
+                    foreach (var g in fantasmas)
+                    {
+                        g.Asustar();
+                        Console.WriteLine(g.ToString());
+                    }
+                }
+            }
+            // Logica de Negocios
+            var fantasma = new Fantasma()
+            {
+                Nombre = "Fantasma-" + Path.GetRandomFileName(),
+            };
+            foreach (var g in fantasmas)
+            {
+                fantasma.Asustar();
+            }
+            fantasmas.Add(fantasma);
+
+            // Serializar
+            using (var file = File.OpenWrite(phantonBinary))
+            {
+                IFormatter formatter = new BinaryFormatter();
+                formatter.Serialize(file, fantasmas);
+                file.Flush();
+            }
+        }
+
+        public static void SerializacionXml(string phantonPath, List<Fantasma> fantasmas)
+        {
+            // Serializacion Binaria
+            var phantonXml = $"{phantonPath}\\phanton.xml";
+            if (File.Exists(phantonXml))
+            {
+                XmlSerializer formatter = new XmlSerializer(typeof(List<Fantasma>));
+                using (var buffer = File.OpenRead(phantonXml))
+                {
+                    fantasmas = formatter.Deserialize(buffer) as List<Fantasma>;
+                    foreach (var g in fantasmas)
+                    {
+                        g.Asustar();
+                        Console.WriteLine(g.ToString());
+                    }
+                }
+            }
+            using (var file = File.OpenWrite(phantonXml))
+            {
+                XmlSerializer formatter = new XmlSerializer(typeof(List<Fantasma>));
+                var fantasma = new Fantasma()
+                {
+                    Nombre = "Fantasma-" + Path.GetRandomFileName(),
+                };
+                foreach (var g in fantasmas)
+                {
+                    fantasma.Asustar();
+                }
+                fantasmas.Add(fantasma);
+                formatter.Serialize(file, fantasmas);
+                file.Flush();
+            }
+        }
+
+        public static void SerializacionJson(string phantonPath, List<Fantasma> fantasmas)
+        {
+            // Serializacion Json
+            var phantonJson = $"{phantonPath}\\phanton.json";
+            if (File.Exists(phantonJson))
+            {
+                using (var buffer = File.OpenRead(phantonJson))
+                {
+                    using (var streamReader = new StreamReader(buffer))
+                    {
+                        var texto = streamReader.ReadToEnd();
+                        fantasmas = JsonConvert.DeserializeObject<List<Fantasma>>(texto);
+                        foreach (var g in fantasmas)
+                        {
+                            g.Asustar();
+                            Console.WriteLine(g.ToString());
+                        }
+                    }
+                }
+            }
+
+            using (var file = File.OpenWrite(phantonJson))
+            {
+                var fantasma = new Fantasma()
+                {
+                    Nombre = "Fantasma-" + Path.GetRandomFileName(),
+                };
+                foreach (var g in fantasmas)
+                {
+                    fantasma.Asustar();
+                }
+                fantasmas.Add(fantasma);
+                var texto = JsonConvert.SerializeObject(fantasmas);
+                using (var streamWriter = new StreamWriter(file))
+                {
+                    streamWriter.Write(texto);
+                }
+            }
         }
     }
 }
