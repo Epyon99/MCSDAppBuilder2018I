@@ -30,7 +30,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Common\Feature.cs" />
     <Compile Include="Common\Person.cs" />
+    <Compile Include="Contexts\EnrollContext.cs" />
     <Compile Include="Enroll\Assistance.cs" />
     <Compile Include="Enroll\AvailableCourse.cs" />
     <Compile Include="Enroll\CapableTeacherCourse.cs" />
@@ -58,10 +66,31 @@
     <Compile Include="Enroll\Teacher.cs" />
     <Compile Include="Enroll\TeacherCourse.cs" />
     <Compile Include="Enroll\WorkCycle.cs" />
+    <Compile Include="Migrations\201805300118201_Migracion-1.cs" />
+    <Compile Include="Migrations\201805300118201_Migracion-1.Designer.cs">
+      <DependentUpon>201805300118201_Migracion-1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805300151016_Migracion-2.cs" />
+    <Compile Include="Migrations\201805300151016_Migracion-2.Designer.cs">
+      <DependentUpon>201805300151016_Migracion-2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ManageDocs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201805300118201_Migracion-1.resx">
+      <DependentUpon>201805300118201_Migracion-1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805300151016_Migracion-2.resx">
+      <DependentUpon>201805300151016_Migracion-2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
