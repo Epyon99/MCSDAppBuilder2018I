@@ -4,8 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{63EAC329-C137-4E55-BD33-67FE7D904F4E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0984DAF6-134B-4957-B481-3FEBAA02BE94} = {0984DAF6-134B-4957-B481-3FEBAA02BE94}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHttpDemo", "WebHttpDemo\WebHttpDemo.csproj", "{2A8A626C-8FDF-45ED-A00D-BB95C5037082}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebHttpDemo", "WebHttpDemo\WebHttpDemo.csproj", "{2A8A626C-8FDF-45ED-A00D-BB95C5037082}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebWcfDemoService", "WebWcfDemoService\WebWcfDemoService.csproj", "{0984DAF6-134B-4957-B481-3FEBAA02BE94}"
 EndProject
