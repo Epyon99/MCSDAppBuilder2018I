@@ -1,0 +1,27 @@
+﻿<Window x:Class="LO.EKPMJA.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LO.EKPMJA.Desktop"
+        mc:Ignorable="d"
+        xmlns:c="clr-namespace:LO.EKPMJA.Desktop"
+        Title="Carreras" Height="450" Width="800">
+    <Window.Resources>
+    </Window.Resources>
+    <StackPanel x:Name="Panel">
+        <StackPanel Orientation="Horizontal">
+            <Label Width="70" Content="Nombre:"/>
+            <TextBox x:Name="TextBox_Name" Width="300" Text="{Binding Mode=TwoWay, Path=NombreCarrera}"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="70" Content="Ciclos:"/>
+            <TextBox x:Name="TextBox_Ciclo" Width="300" Text="{Binding Mode=TwoWay, Path=Ciclos}"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="70" Content="Facultad:"/>
+            <TextBox x:Name="TextBox_Facultad" Width="300" Text="{Binding Mode=TwoWay, Path=Facultad}"></TextBox>
+        </StackPanel>
+        <Button Click="Button_Click">Saludar</Button>
+    </StackPanel>
+</Window>
