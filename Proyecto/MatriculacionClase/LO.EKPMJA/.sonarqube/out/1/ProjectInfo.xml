@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>LO.EKPMJA.Models</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Product</ProjectType>
+  <ProjectGuid>8705c0e8-a8c8-47df-97db-b841bf20f14d</ProjectGuid>
+  <FullPath>C:\Workspace\Personal\Lourtec-2018-i\MCSDAppBuilder2018I\Proyecto\MatriculacionClase\LO.EKPMJA\LO.EKPMJA.Models\LO.EKPMJA.Models.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\Workspace\Personal\Lourtec-2018-i\MCSDAppBuilder2018I\Proyecto\MatriculacionClase\LO.EKPMJA\.sonarqube\out\1\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePath">C:\Workspace\Personal\Lourtec-2018-i\MCSDAppBuilder2018I\Proyecto\MatriculacionClase\LO.EKPMJA\LO.EKPMJA.Models\bin\Debug\LO.EKPMJA.Models.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPath">C:\Workspace\Personal\Lourtec-2018-i\MCSDAppBuilder2018I\Proyecto\MatriculacionClase\LO.EKPMJA\.sonarqube\out\1</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+</ProjectInfo>

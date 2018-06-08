@@ -13,9 +13,21 @@ namespace LO.EKPMJA.Desktop.ViewModels
         {
             Add(new CarrerasModel()
             {
-                NombreCarrera = "1",
-                Ciclos = 1,
-                Facultad = "1"
+                NombreCarrera = "Informatica",
+                Ciclos = 10,
+                Facultad = "Informatica"
+            });
+            Add(new CarrerasModel()
+            {
+                NombreCarrera = "Cocinero",
+                Ciclos = 10,
+                Facultad = "Escuela de Cocina",
+            });
+            Add(new CarrerasModel()
+            {
+                NombreCarrera = "Dise♫o",
+                Ciclos = 10,
+                Facultad = "Humanidades"
             });
         }
     }

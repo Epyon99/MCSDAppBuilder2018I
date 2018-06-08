@@ -1,0 +1,7 @@
+﻿<carrera:CarrerasModel
+    xmlns:carrera="clr-namespace:LO.EKPMJA.Desktop.ViewModels"
+    Ciclos="10"
+    NombreCarrera="Moises"
+    Facultad="Ciencias"
+    >
+</carrera:CarrerasModel>

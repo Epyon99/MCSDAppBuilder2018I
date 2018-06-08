@@ -1,0 +1,31 @@
+﻿<Page x:Class="LO.EKPMJA.Desktop.Views.Carreras.CarrerasCreate"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LO.EKPMJA.Desktop.Views.Carreras"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="Carreras">
+
+    <Grid x:Name="Formulario" d:DataContext="{d:DesignData Source=../FakeData/SampleCarreraData.xaml}">
+        <StackPanel >
+            <TextBlock HorizontalAlignment="Center" Text="Generar carrera">                
+            </TextBlock>
+            <StackPanel>
+                <Label Content="Nombre de Carrera" /><TextBox Text="{Binding NombreCarrera}" />
+            </StackPanel>
+            <StackPanel >
+                <Label Content="Ciclos" PreviewTextInput="Label_PreviewTextInput" /><TextBox Text="{Binding Ciclos}"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Facultad" /><TextBox Text="{Binding Facultad}"/>
+            </StackPanel>
+            <StackPanel>
+                <Button Content="Guardar" Click="Button_Click" />
+                <Button Content="Cancelar" Click="Button_Click_1"/>
+                
+            </StackPanel>
+            </StackPanel>
+    </Grid>
+</Page>

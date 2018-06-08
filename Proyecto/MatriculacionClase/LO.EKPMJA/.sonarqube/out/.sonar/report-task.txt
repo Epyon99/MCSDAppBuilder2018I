@@ -1,0 +1,7 @@
+organization=epyon99-github
+projectKey=MoisesTest
+serverUrl=https://sonarcloud.io
+serverVersion=7.2.0.12516
+dashboardUrl=https://sonarcloud.io/dashboard/index/MoisesTest
+ceTaskId=AWPK2T7CRIlG_RTu9k7c
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWPK2T7CRIlG_RTu9k7c
