@@ -8,7 +8,7 @@
       d:DesignHeight="300" d:DesignWidth="400"
       Title="Carreras">
 
-    <Grid x:Name="Formulario" d:DataContext="{d:DesignData Source=../FakeData/SampleCarreraData.xaml}">
+    <Grid x:Name="Formulario">
         <StackPanel >
             <TextBlock HorizontalAlignment="Center" Text="Generar carrera">                
             </TextBlock>

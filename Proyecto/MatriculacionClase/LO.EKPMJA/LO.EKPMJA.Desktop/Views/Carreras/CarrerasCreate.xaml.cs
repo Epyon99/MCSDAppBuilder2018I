@@ -37,7 +37,7 @@ namespace LO.EKPMJA.Desktop.Views.Carreras
             {
                 return false;
             }
-            if (carrera.Ciclos > 0)
+            if (carrera.Ciclos == 0)
             {
                 return false;
             }

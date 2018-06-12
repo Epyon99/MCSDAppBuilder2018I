@@ -2,8 +2,4 @@
     xmlns:sysCol="clr-namespace:System.Collections;assembly=mscorlib"
     xmlns:m="clr-namespace:LO.EKPMJA.Desktop.ViewModels"
     >
-    <m:CarrerasModel Ciclos="10" Facultad="Ingenieria" NombreCarrera="Ingenieria"></m:CarrerasModel>
-    <m:CarrerasModel Ciclos="5" Facultad="Practicante" NombreCarrera="Practicante"></m:CarrerasModel>
-    <m:CarrerasModel Ciclos="7" Facultad="Tecnico" NombreCarrera="Tecnico"></m:CarrerasModel>
-    <m:CarrerasModel Ciclos="3" Facultad="Curso" NombreCarrera="Curso"></m:CarrerasModel>
-</sysCol:ArrayList>
+ </sysCol:ArrayList>

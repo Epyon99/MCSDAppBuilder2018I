@@ -9,7 +9,7 @@
       Title="CarrerasIndex">
 
     <Grid>
-        <Grid HorizontalAlignment="Left" Margin="0" Width="800" d:DataContext="{d:DesignData Source=../FakeData/SampleCarreraData.xaml}">
+        <StackPanel HorizontalAlignment="Left" Margin="0" Width="800">
             <ListView x:Name="CarrersList" Width="Auto" ItemsSource="{Binding}">
                 <ListView.View>
                     <GridView>
@@ -18,8 +18,8 @@
                         <GridViewColumn Header="Facultad" Width="150" DisplayMemberBinding="{Binding Facultad}" />                        
                     </GridView>
                 </ListView.View>
-            </ListView>
-        </Grid>
-        <Button Click="Button_Click"></Button>
+            </ListView>            
+           <Button Click="Button_Click" Content="Crear"></Button>
+        </StackPanel>
     </Grid>
 </Page>

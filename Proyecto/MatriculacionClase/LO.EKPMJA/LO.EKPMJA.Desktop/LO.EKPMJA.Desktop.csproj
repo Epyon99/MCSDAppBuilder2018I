@@ -87,17 +87,6 @@
     <Compile Include="Views\Carreras\CarrerasIndex.xaml.cs">
       <DependentUpon>CarrerasIndex.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\FakeData\SampleCarreraSingle.xaml.cs">
-      <DependentUpon>SampleCarreraSingle.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Views\Carreras\CarrerasCreate.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\FakeData\SampleCarreraData.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -110,11 +99,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\Carreras\CarrerasIndex.xaml">
+    <Page Include="Views\Carreras\CarrerasCreate.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
-    <Page Include="Views\FakeData\SampleCarreraSingle.xaml">
+    <Page Include="Views\Carreras\CarrerasIndex.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -157,6 +146,8 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\FakeData\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

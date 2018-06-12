@@ -31,7 +31,7 @@ namespace LO.EKPMJA.Desktop.Views.Carreras
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("CarrerasCreate.xaml",UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new CarrerasCreate());
         }
     }
 }
